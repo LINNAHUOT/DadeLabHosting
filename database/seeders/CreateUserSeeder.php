@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Seeders;
-use Illuminate\Support\Facades\hash;
+use Illuminate\Support\Facades\Hash;//doy sa hng kro kat point me
 use Illuminate\Database\Seeder;
 use App\Models\User;
 class CreateUserSeeder extends Seeder
@@ -17,7 +17,7 @@ class CreateUserSeeder extends Seeder
             [
                'name'=>'Admin',
                'email'=>'admin@test.com',
-               'role' => 'admin', 
+               'role' => 'admin',
                'password'=>Hash::make('123456'),
             ],
             [
@@ -25,15 +25,15 @@ class CreateUserSeeder extends Seeder
                'email'=>'sam@test.com',
                'role' => 'doctor',
                'password'=>Hash::make('123456'),
-               
+
             ],
-            
+
             [
                 'name'=>'Sok San',
                 'email'=>'sok@test.com',
                 'role' => 'patient',
                 'password'=>Hash::make('123456'),
-        
+
              ],
 
         ];
